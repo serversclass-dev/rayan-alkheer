@@ -139,14 +139,17 @@
         }
 
         .loader-logo {
-            width: 120px;
+            width: 220px;
             height: 120px;
             margin-bottom: 28px;
-            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            border-radius: 30px;
             background: var(--surface);
-            padding: 18px;
-            animation: blobMorph 6s ease-in-out infinite;
+            padding: 18px 24px;
+            animation: none;
             box-shadow: 0 20px 60px rgba(247, 150, 70, 0.35);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .loader-logo img {
@@ -280,17 +283,16 @@
         }
 
         .logo-mark {
-            width: 52px;
-            height: 52px;
-            background: var(--gradient-primary);
-            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            width: 90px;
+            height: 55px;
+            background: transparent;
+            border-radius: 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 8px;
+            padding: 0;
             transition: all 0.4s ease;
-            box-shadow: 0 6px 18px -4px rgba(31, 73, 125, 0.40);
-            animation: blobMorphSlow 10s ease-in-out infinite;
+            animation: none;
         }
 
         @keyframes blobMorphSlow {
@@ -302,7 +304,7 @@
             width: 100%;
             height: 100%;
             object-fit: contain;
-            filter: brightness(0) invert(1);
+            filter: none;
         }
 
         .logo-container:hover .logo-mark {
@@ -1603,15 +1605,15 @@
         }
 
         .footer-logo-mark {
-            width: 60px;
-            height: 60px;
+            width: 110px;
+            height: 65px;
             background: var(--surface);
-            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            border-radius: 16px;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 10px;
-            animation: blobMorphSlow 10s ease-in-out infinite;
+            padding: 8px 12px;
+            animation: none;
             box-shadow: 0 8px 20px rgba(247, 150, 70, 0.25);
         }
 
@@ -1960,7 +1962,11 @@
             .footer-logo-section { flex-direction: column; }
             .logo-text h1 { font-size: 16px; }
             .logo-text span { font-size: 10px; }
+            .logo-mark { width: 75px; height: 45px; }
+            .footer-logo-mark { width: 95px; height: 55px; }
+            .loader-logo { width: 180px; height: 100px; }
         }
+
 
         @media screen and (max-width: 768px) {
             input, textarea, select {
